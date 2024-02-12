@@ -94,7 +94,8 @@ public class UtilityForFilteringFileContent {
                 Files.createFile(filePath);
             }
 
-            StandardOpenOption[] options = append ? new StandardOpenOption[]{StandardOpenOption.APPEND} : new StandardOpenOption[]{};
+            StandardOpenOption[] options = append ? new StandardOpenOption[]{StandardOpenOption.APPEND} :
+                    new StandardOpenOption[]{};
 
             try (BufferedWriter writer = Files.newBufferedWriter(filePath, options)) {
                 writer.write(data);

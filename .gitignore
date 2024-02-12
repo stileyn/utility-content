@@ -9,7 +9,6 @@ target/
 *.iml
 *.ipr
 META-INF/
-img/
 
 ### Eclipse ###
 .apt_generated
